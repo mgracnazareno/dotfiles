@@ -20,6 +20,7 @@ type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load pyenv (To manage your Python versions)
 export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1 # https://github.com/pyenv/pyenv-virtualenv/issues/135
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)"
 
 # Load nvm if installed (To manage your Node versions)
@@ -43,18 +44,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BROWSER=/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe
-export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
 sudo /etc/init.d/postgresql start
-export BROWSER=/mnt/c/Program Files (x86)/Google/Chrome/Application/msedge.exe
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BROWSER=/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe
-export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-export BROWSER=/mnt/c/Program Files (x86)/Google/Chrome/Application/msedge.exe
-export BROWSER=/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe
-export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-export BROWSER=/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe
-export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
@@ -62,4 +52,9 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BROWSER='"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe"'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+sudo /etc/init.d/postgresql start
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
